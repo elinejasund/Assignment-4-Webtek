@@ -66,3 +66,9 @@ const technologies = [
     'Bootstrap',
     'Node.js'
 ];
+
+let liste = document.getElementById("tech")
+
+for (let elements = 0; elements < technologies.length; elements++){
+  liste.innerHTML += "<li>" + technologies[elements] + "</li>"
+}
