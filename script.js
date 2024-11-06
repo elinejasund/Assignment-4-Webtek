@@ -13,15 +13,15 @@ for (let i = 0; i < numbers.length; i++) {
     else if (numbers[i] % 5 === 0){
       console.log("kake")
     }
-     
     else{
       console.log(numbers[i])
     }
   }
 
 /* Task  1.4 */
-let headline = document.getElementById("title")
-console.log(headline)
+
+let headline = document.getElementById("title");
+headline.innerText = "Hello, JavaScript"
 
 /* Task  1.5 */
 function changeDisplay () {

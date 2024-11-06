@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>IT2805 assignment 5: JavaScript </title>
-    <script type="text/javascript" src="script.js">/* We chose to add the relative path within the head of the document because the head is loaded before the body, and hence the document will load with the connection between the HTML and JS instead of just as plain HTML(for example).*/</script>
     <style>
       .box{
         /* Sets the size and position of each box */
@@ -24,17 +23,18 @@
         width: 200px;
         margin: 10px;
         text-align: center;
+        display: inline;
       }
     </style>
   </head>
   <body>
 
-    <h1 id='title'>Lol</h1>
+    <h1 id="title"></h1>
 
     <h2>Task  1.5</h2>
     <div class='buttons'>
-      <button>Display: none </button>
-      <button>Visibility: hidden</button>
+      <button>Display: none </button> 
+      <button>Visibility: hidden</button> 
       <button>Reset</button>
     </div>
     <div class='box' id='magic'> 1 </div>
@@ -46,6 +46,7 @@
 
   </body>
 </html>
+
 
 <script type="text/javascript" src="script.js">
   /* We chose to add the relative path at the bottom of the html document, as we need to load the HTML (for exampleIDs) to then make requests for the HTML file.*/
