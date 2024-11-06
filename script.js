@@ -25,7 +25,12 @@ headline.innerText = "Hello, JavaScript"
 
 /* Task  1.5 */
 function changeDisplay () {
-
+  let changeBox = document.getElementById("magic");
+  console.log(changeBox)
+  let change = document.getElementById("display");
+  change.addEventListener("click"{
+    changeBox.style.display = "none"
+  })
 }
 
 function changeVisibility () {
