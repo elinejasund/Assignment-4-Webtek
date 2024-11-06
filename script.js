@@ -20,8 +20,8 @@ for (let i = 0; i < numbers.length; i++) {
   }
 
 /* Task  1.4 */
-let headline = document.querySelector("h1")
-headline.innerText = "Hello, JavaScript"
+let headline = document.getElementById("title")
+console.log(headline)
 
 /* Task  1.5 */
 function changeDisplay () {
