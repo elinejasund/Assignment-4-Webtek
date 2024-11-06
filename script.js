@@ -24,21 +24,32 @@ let headline = document.getElementById("title");
 headline.innerText = "Hello, JavaScript"
 
 /* Task  1.5 */
-function changeDisplay () {
-  let changeBox = document.getElementById("magic");
-  console.log(changeBox)
-  let change = document.getElementById("display");
-  change.addEventListener("click"{
-    changeBox.style.display = "none"
-  })
+let changeBox = document.getElementById("magic")
+let disp = document.getElementById("display")
+let visi = document.getElementById("visibility")
+let res = document.getElementById("reset")
+
+disp.addEventListener("click", changeDisplay)
+visi.addEventListener("click", changeVisibility)
+res.addEventListener("click", reset)
+
+
+
+function changeDisplay (){
+  changeBox.style.display = "none"
+  console.log("Display changed")
 }
 
 function changeVisibility () {
-
+  changeBox.style.visibility = "hidden";
+  changeBox.style.display = "block";
+  console.log("Visibility changed")
 }
 
 function reset () {
-
+  changeBox.style.display = "block";
+  changeBox.style.visibility = "visible";
+  console.log("Reset")
 }
 
 /* Task 1.6 */
