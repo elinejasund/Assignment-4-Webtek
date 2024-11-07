@@ -1,5 +1,5 @@
 let addbar = document.getElementById("taskadd")
-let list = document.getElementById("tasks")
+let taskList = document.getElementById("tasks")
 let button = document.getElementById("button")
 
 window.addEventListener("load", function(){
@@ -8,6 +8,15 @@ window.addEventListener("load", function(){
 
 button.addEventListener("click", addTask)
 
+let list = []
 function addTask(){
-    list.innerHTML += '<li>' + '<input type="checkbox" id ="todo">'+ addbar.value + '</inpput></li>'
+    list.unshift('<li><input type="checkbox" id ="todo">'+ addbar.value + '</inpput></li>')
+    console.log(list)
+
+    taskList.innerHTML = null
+    for (let i = 0; i < list.length; i++) {
+        taskList.innerHTML += list[i]
+    }
 }
+
+
