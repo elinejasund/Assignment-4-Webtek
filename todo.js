@@ -11,4 +11,3 @@ button.addEventListener("click", addTask)
 function addTask(){
     list.innerHTML += '<li>' + '<input type="checkbox" id ="todo">'+ addbar.value + '</inpput></li>'
 }
-//Halla
