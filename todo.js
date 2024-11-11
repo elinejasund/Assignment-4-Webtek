@@ -45,6 +45,9 @@ function addTask(){
     }
 
     taskList.innerHTML = null
+    tasksDone = 0
+    addbar.value = ""
+
     for (let i = 0; i < tasks.length; i++) {
         taskList.innerHTML += tasks[i]
     }
