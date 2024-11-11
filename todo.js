@@ -36,12 +36,12 @@ function checked(ev){
 function addTask(){
     
     if (tasks.length == 0) {
-        tasks.unshift('<li><input type="checkbox" class ="todo" id ="todo' + 0 + '">' + addbar.value + '</input></li>')
+        tasks.unshift('<li><input type="checkbox" class ="todo">' + addbar.value + '</input></li>')
     }
 
     else{
         i += 1
-        tasks.unshift('<li><input type="checkbox" class ="todo" id ="todo' + i + '">' + addbar.value + '</input></li>')
+        tasks.unshift('<li><input type="checkbox" class ="todo">' + addbar.value + '</input></li>')
     }
 
     taskList.innerHTML = null
@@ -52,7 +52,7 @@ function addTask(){
         taskList.innerHTML += tasks[i]
     }
     count.innerText = (tasksDone + "/" + (i + 1))
-
+    console.log(tasks)
 }
 
 
